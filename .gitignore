@@ -1,0 +1,22 @@
+# Python cache and artifacts
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS/editor
+.DS_Store
+.vscode/
+
+# Runtime outputs
+outputs/
+*.mp4
+
+# Keep sample directory but ignore large files
+data/*.mp4
+!data/.gitkeep
