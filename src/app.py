@@ -98,7 +98,7 @@ def create_app() -> gr.Blocks:
 
         with gr.Row():
             with gr.Column():
-                input_video = gr.Video(label="Input Video", sources=["upload"], type="filepath")
+                input_video = gr.Video(label="Input Video", sources=["upload"])
                 model_size = gr.Dropdown(
                     label="Model Size",
                     choices=["nano", "small", "medium"],

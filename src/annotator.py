@@ -21,7 +21,7 @@ class FrameAnnotator:
             raise ValueError("theme must be either 'light' or 'dark'")
 
         self.theme = normalized_theme
-        self._bbox_annotator = sv.BoundingBoxAnnotator(color_lookup=sv.ColorLookup.TRACK)
+        self._bbox_annotator = sv.BoxAnnotator(color_lookup=sv.ColorLookup.TRACK)
         self._label_annotator = sv.LabelAnnotator(
             color_lookup=sv.ColorLookup.TRACK,
             text_color=sv.Color.BLACK if self.theme == "light" else sv.Color.WHITE,

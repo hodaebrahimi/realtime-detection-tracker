@@ -1,7 +1,7 @@
 ultralytics==8.2.103
 supervision==0.22.0
 opencv-python==4.10.0.84
-gradio==4.44.0
+gradio>=5.0,<6.0
 Pillow==10.4.0
 numpy==1.26.4
 tqdm==4.66.5

@@ -20,3 +20,6 @@ outputs/
 # Keep sample directory but ignore large files
 data/*.mp4
 !data/.gitkeep
+
+#pt
+*.pt
