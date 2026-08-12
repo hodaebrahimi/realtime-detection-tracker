@@ -83,33 +83,9 @@ python -m src.app
 
 Then open the local URL shown in the terminal, upload a video, configure settings, and process.
 
-## Example Output
+## Supported Classes
 
-Place your output preview media here.
-
-- GIF placeholder: `docs/demo.gif`
-- Screenshot placeholder: `docs/screenshot.png`
-
-## Performance Benchmarks (Placeholder)
-
-| Model Size | Approx FPS (1080p, CPU/GPU dependent) |
-|------------|----------------------------------------|
-| nano (n)   | TBD                                    |
-| small (s)  | TBD                                    |
-| medium (m) | TBD                                    |
-| large (l)  | TBD                                    |
-
-## Supported Classes (COCO-80)
-
-person, bicycle, car, motorcycle, airplane, bus, train, truck, boat, traffic light,
-fire hydrant, stop sign, parking meter, bench, bird, cat, dog, horse, sheep, cow,
-elephant, bear, zebra, giraffe, backpack, umbrella, handbag, tie, suitcase, frisbee,
-skis, snowboard, sports ball, kite, baseball bat, baseball glove, skateboard, surfboard,
-tennis racket, bottle, wine glass, cup, fork, knife, spoon, bowl, banana, apple,
-sandwich, orange, broccoli, carrot, hot dog, pizza, donut, cake, chair, couch,
-potted plant, bed, dining table, toilet, tv, laptop, mouse, remote, keyboard, cell phone,
-microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear,
-hair drier, toothbrush
+The detector uses YOLOv8 models pretrained on the COCO dataset and supports the standard COCO object classes.
 
 ## Running Tests
 
@@ -122,3 +98,4 @@ pytest -q
 - Library modules use logging and avoid direct `print` output.
 - CLI scripts print concise run summaries.
 - By default, the detector loads `yolov8n.pt` for speed.
+- Actual frame rate depends on model size, input resolution, hardware, and whether inference runs on CPU or GPU.
